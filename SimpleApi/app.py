@@ -18,6 +18,7 @@ sentry.init_app(app)
 
 @app.route('/')
 def hello():
+    raise Exception("Demo Exception !")
     return "Hello World!"
 
 
